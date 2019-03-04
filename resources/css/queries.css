@@ -1,0 +1,120 @@
+/* Monitors 1024px - 1200px */
+@media only screen and (max-width: 1200px)
+{
+
+}
+
+/* Tablets 768px - 1023px */
+@media only screen and (max-width: 1023px)
+{
+ 
+}
+
+/* Large phones 481px - 767px */
+@media only screen and (max-width: 767px)
+{
+    h1
+    {
+        font-size: 300%;
+        padding: 20px;
+    }
+    
+    h2
+    {
+        font-size: 180%;
+        padding: 0px;
+    }
+    
+    body 
+    {
+        font-size: 15px;
+    }
+    
+    section
+    {
+        padding: 40px;
+    }
+    
+    .long-copy
+    {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .header-text-box
+    {
+        top: 30%;
+        left: 5%;
+        right: 5%;
+        -webkit-transform: translate(0%,0%);
+        transform: translate(0%,0%);
+    }
+    
+    .mobile-nav-icon
+    {
+        float: right;
+        display: block;
+    }
+    
+    .main-nav
+    {
+        float: right;
+        margin-top: 7px;
+        margin-right: 0px;
+        display: none;
+    }
+    
+    .main-nav li
+    {
+        display:block;
+        text-align: right;
+        font-size: 120%;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited
+    {
+        display: block;
+        border: 0;
+    } 
+    
+    .sticky
+    {
+        height: 50px;
+    }
+    
+    footer
+    {
+        display: none;
+    }
+    
+    input[type=text], input[type=email], select, textarea
+    {
+        width: 100%;
+        -webkit-transform: translate(0%,0%);
+        transform: translate(0%,0%);
+        margin: 10px 0;
+    } 
+    
+    .form-label 
+    {
+        margin-left: 10px;
+    }
+    
+    input[type = submit]
+    {
+        width: 100%;
+        margin:0px;
+    }
+    
+    .logo
+    {
+        display: none;
+    }
+}
+
+/* Small phones 0px - 480px */
+@media only screen and (max-width: 480px)
+{
+
+}

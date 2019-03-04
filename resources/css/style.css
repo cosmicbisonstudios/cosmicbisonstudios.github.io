@@ -1,0 +1,456 @@
+/*
+    Purple color: #8e44ad
+*/
+
+
+/* === Basic setup === */
+
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html
+{
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Raleway', 'Arial';
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom: 1}
+.clearfix: after
+{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* === Reusable CSS === */
+
+.row
+{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section
+{
+    padding: 80px 0 80px 0;
+}
+
+.box
+{
+    padding:1%;
+    text-align: center;
+}
+
+/* === Headings CSS === */
+
+h1
+{
+    margin: 0;
+    color: #fff;
+    font-size: 400%;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2
+{
+    margin: 0;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3
+{
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: 150%;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3:after
+{
+    display: block;
+    height: 3px;
+    background-color: #8e44ad;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.white-heading
+{
+    color: #fff;
+    font-weight: 400;
+}
+
+h4
+{
+    margin: 5px;
+    color: #000000;
+    font-size: 120%;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* === Paragraphs === */
+
+.long-copy
+{
+    color: #000000;
+    text-align: center;
+    line-height: 150%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p
+{
+    margin-top: 20px;
+    line-height: 150%;
+    font-size: 90%;
+    text-align: center;
+}
+
+/* === Icons CSS === */
+
+.icon-big
+{
+    font-size: 400%;
+    display: block;
+    color: #8e44ad;
+    margin-bottom: 10px;
+}
+
+/* === Header CSS === */
+
+header
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../../resources/img/Fluids1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-text-box
+{
+    position: absolute;
+    width 1140px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* === Buttons CSS === */
+
+.btn:link, .btn:visited, input[type = submit]
+{
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn-full:link, .btn-full:visited, input[type = submit]
+{
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    margin-right: 10px;
+}
+
+.btn-ghost:link, .btn-ghost:visited
+{
+    border: 2px solid #8e44ad;
+    margin-left: 10px;
+}
+
+.btn:hover, .btn:active, input[type = submit]:hover
+{
+    background-color: #34193f;
+}
+
+/* === Nav bar CSS === */
+
+.logo
+{
+    float: left;
+    width: auto;
+    font-size: 120%;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-nav li a:link, .main-nav li a:visited
+{
+    font-size: 120%;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 5px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover, .main-nav li a:active
+{
+    font-size: 120%;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 5px solid #8e44ad;
+}
+
+/* === Sticky navi === */
+.sticky
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 50px;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link, .sticky .main-nav li a:visited
+{
+    color: #fff;
+}
+
+/* === Mobile navi === */
+.mobile-nav-icon
+{
+    float: right;
+    margin-top: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i
+{
+    font-size: 200%;
+    color: #fff;
+}
+
+/* === Tutorials === */
+.section-tutorials
+{
+   color: #000000;
+}
+
+/* === Simulation showcase === */
+
+.section-simulations
+{
+    overflow: hidden;
+    padding: 0px;
+}
+
+.simulation-showcase
+{
+    list-style: none;
+    width: 100%;
+}
+
+.simulation-showcase li
+{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.showcase-image
+{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.showcase-image img
+{
+    opacity: 0.6;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0px;
+    transform: scale(1.25);
+    transition: transform 0.7s, opacity 0.7s;
+}
+
+.showcase-image img:hover
+{
+    transform: scale(1.03);
+    opacity: 1.0;
+}
+
+/* === Applets showcase === */
+
+.section-applets
+{
+    background-color: #f4f4f4;
+}
+
+.example-image
+{
+    text-align: center;  
+}
+
+.example-image img
+{
+    border-radius: 20px;
+    width: 90%;
+    margin-bottom: 3%;
+}
+
+/* === Contact form === */
+
+.section-form
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../../resources/img/Nature3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    color:#fff;
+}
+
+.form-label 
+{
+   margin-left: 100px;
+}
+
+input[type=text], input[type=email], select, textarea
+{
+    width: 80%;
+    transform: translate(-20%,0);
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #9b9b9b;
+}
+
+input[type = submit]
+{
+    width: 50%;
+    margin:0;
+}
+
+textarea
+{
+    height: 150px;
+}
+
+/* === Footer === */
+
+footer
+{
+    padding-bottom: 20px;
+    background-color: #000000;
+    color:#000;
+
+}
+
+.footer-nav
+{
+    margin-left: 20px;
+    list-style: none;
+    float: left;
+}
+
+.footer-social
+{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li, .footer-social li
+{
+    display: inline-block;
+    margin-right: 20px;  
+}
+
+.footer-nav li: last-child, .footer-social li: last-child
+{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.footer-social li a:link,
+.footer-social li a:visited
+{
+    text-decoration: none;
+    border: 0;
+    color: #fff;
+}
+
+.footer-social li a:link,
+.footer-social li a:visited
+{
+    font-size: 120%
+}
+
+.ion-social-facebook:hover
+{
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover
+{
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover
+{
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover
+{
+    color: #517fa4;
+}
+
+.ios-social-facebook, .ion-social-twitter, .ion-social-googleplus,
+.ion-social-instagram
+{
+    transition: color 0.3s;
+}
+
+footer p
+{
+    color: #fff;
+    text-align: center;
+    font-size: 85%;
+}
+
