@@ -373,7 +373,7 @@ textarea
 
 .form-messages
 {
-    width:100%;
+    width:40%;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
@@ -381,7 +381,12 @@ textarea
 
 .success
 {
-    background-color:#000;
+    
+}
+
+.error
+{
+    
 }
 
 /* === Footer === */
