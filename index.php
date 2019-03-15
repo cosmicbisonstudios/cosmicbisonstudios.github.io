@@ -11,6 +11,7 @@
         <link rel = "stylesheet" type = "text/css" href = "resources/css/style.css">
         <link rel = "stylesheet" type = "text/css" href = "resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,300i,400" rel="stylesheet">
+        
         <title>Life is Code</title>
         
         <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon.png">
@@ -152,14 +153,17 @@
             </div>
             <div class = "row">
                 <form method = "post" action = "mailer.php" class = "contact-form">
-                    
-                    <?php
-                    <div class = "form-messages success">
-                        Thank you for your comments!
-                    </div>
-                    
-                    <div class = "form-messages success">
-                        Uh oh! Something went wrong!
+                    <div class = "row">
+                        <?php
+                            if($_GET['success'] == 1)
+                            {
+                                echo "<div class =\"form-messages success\"> Thank you for your comments! </div>";
+                            }
+                            if($_GET['success'] == -1)
+                            {
+                                echo "<div class =\"form-messages error\"> Uh oh! Something went wrong! </div>";
+                            }
+                        ?>
                     </div>
                     <div class = "row">
                         <div class = "col span-1-of-3">

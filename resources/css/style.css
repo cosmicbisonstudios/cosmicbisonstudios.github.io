@@ -371,6 +371,19 @@ textarea
     height: 150px;
 }
 
+.form-messages
+{
+    width:100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.success
+{
+    background-color:#000;
+}
+
 /* === Footer === */
 
 footer
